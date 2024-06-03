@@ -3,4 +3,9 @@ The server does not automatically send a time stamp when a new incoming connecti
 Accordingly, the client should first write the GET\n command after the connection is established and then wait for the response from the server, read it out and then output it as text.
 The server should not close the connection automatically (except in the event of an error), but wait for further commands. The client should close the connection once the time stamp has been read.
 
-Running the programm: Just run 'make' in your terminal 
+Compile the programm: Just run 'make' in your terminal 
+
+Run the programm: Open two terminal windows start 
+the order is important 
+type in window 1: ./tcp-demo-server <server-port>
+type in window 2: ./tcp-demo-client localhost <server-port>
